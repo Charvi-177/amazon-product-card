@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Style Product Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .product-details {
+      padding: 15px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #0f1111;
+      height: 42px;
+      overflow: hidden;
+    }
+
+    .product-rating {
+      color: #ffa41c;
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .product-price {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 4px 0;
+    }
+
+    .prime-badge {
+      height: 20px;
+      margin-top: 5px;
+    }
+
+    .add-to-cart {
+      background-color: #ffd814;
+      border: 1px solid #fcd200;
+      border-radius: 8px;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #111;
+      transition: background-color 0.2s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #f7ca00;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/61o5tZIG1DL._AC_UL480_FMwebp_QL65_.jpg" alt="Product" class="product-image" />
+    <div class="product-details">
+      <div class="product-title">
+        Women's Casual Loose Short Sleeve T-Shirt Dress
+      </div>
+      <div class="product-rating">
+        ★★★★☆ (4.3)
+      </div>
+      <div class="product-price">₹799</div>
+      <img src="https://m.media-amazon.com/images/G/31/prime/ACQC/desktop_badge_1x._SY90_.png" class="prime-badge" alt="Prime"/>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>
